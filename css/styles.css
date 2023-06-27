@@ -122,13 +122,13 @@ body {
   background-color: var(--ocean);
 }
 
-/* --------------TEAM----------
+/* --------------TEAM---------- */
 .team {
-  background-color: var(--white);
+  background-color: var(--cloud);
 }
 .teammate {
   background-color: var(--white);
-} */
+}
 
 /*--------------OTHER TEXT----------*/
 .text-h-two {
