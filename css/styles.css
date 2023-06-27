@@ -1,20 +1,15 @@
 :root {
   --iris: #4d5ae5;
-  --pressed-state-color: #404bbf;
+  --ocean: #404bbf;
   --navyblue: #2e2f42;
-  --green-success: #31d0aa;
   --slate: #434455;
-  --lightslate-subtle-text: #8e8f99;
-  --cornflower-accent: #e7e9fc;
-  --cloud-light: #f4f4fd;
-  --navyblue-modal: rgba(46, 47, 66, 0.4);
-  --grey: rgba(46, 47, 66, 0.7);
+  --cornflower: #e7e9fc;
+  --cloud: #f4f4fd;
   --white: #ffffff;
-  --dairy: #fcfcfc;
 }
 body {
   font-family: "Roboto", sans-serif;
-  color: var(--green-success);
+  color: var(--slate);
   background-color: #ffffff;
 }
 .visually-hidden {
@@ -36,7 +31,7 @@ body {
   list-style-type: none;
 }
 
-/*------------HEADER----------------*/
+/*--------------------HEADER----------------*/
 .logo {
   color: var(--navyblue);
   font-size: 18px;
@@ -59,6 +54,91 @@ body {
 .address-item {
   color: var(--slate);
   font-size: 16px;
+  font-style: normal;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+.navigation-item:hover,
+.navigation-item:focus,
+.address-item:hover,
+.address-item:focus {
+  color: var(--ocean);
+}
+
+/*----------------------FOOTER----------------*/
+.footer {
+  color: var(--cloud);
+  background-color: var(--navyblue);
+}
+.footer .link {
+  color: var(--cloud);
+}
+.footer p {
+  color: var(--cloud);
+}
+
+/*--------------PORTFOLIO-Progects----------*/
+.filter-button {
+  border-radius: 4px;
+  border: 1px solid var(--cornflower);
+  background: var(--cloud);
+  color: var(--iris, #4d5ae5);
+  text-align: center;
+  font-style: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+.filter-button:hover,
+.filter-button:focus {
+  color: var(--white);
+  background: var(--ocean);
+}
+
+/*--------------MAIN PAGE-HERO----------*/
+.hero {
+  color: var(--white, #fff);
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.07;
+  letter-spacing: 1.12px;
+  background-color: var(--navyblue);
+}
+.hero-button {
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.64px;
+  background-color: var(--iris);
+  cursor: pointer;
+}
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--ocean);
+}
+
+/*--------------OTHER TEXT----------*/
+.text-h-two {
+  color: var(--navyblue);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+}
+.text-h-three {
+  color: var(--navyblue);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.4px;
+}
+.text-p {
+  color: var(--slate);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
 }
